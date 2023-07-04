@@ -735,18 +735,532 @@ footer {
 /* -================================== Feedback finish ================================== */
 /* Dilshoda */
 /* -================================== Choose Pharma begin ================================== */
+.choosePharma {
+  height: 593px;
+  background: #dcedfe;
+  background-image: url("../img/Abzarbek/Pattern.png");
+  background-position: center;
+}
+.choosePharma .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.choosePharma .container P {
+  color: #1c1c1c;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  line-height: 142%;
+  letter-spacing: 5.81px;
+  border: 0.1px solid rgba(143, 143, 143, 0.295);
+  display: inline-block;
+  padding: 5px 22px;
+  margin-bottom: 20px;
+}
+.choosePharma .container span {
+  display: inline-block;
+  width: 660px;
+  height: 50px;
+  color: #545454;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 142%;
+}
+.choosePharma .container .boxTop {
+  margin-top: 40px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.choosePharma .container .boxTop div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choosePharma .container .boxTop div input {
+  display: none;
+}
+.choosePharma .container .boxTop div input + label .img img {
+  display: none;
+}
+.choosePharma .container .boxTop div input:checked + label .img {
+  box-shadow: 0 0 5px 10px rgba(15, 227, 174, 0.431372549);
+  background-color: rgba(15, 227, 174, 0.431372549);
+  border-radius: 10px;
+}
+.choosePharma .container .boxTop div input:checked + label .img img {
+  display: flex;
+}
+.choosePharma .container .boxTop div label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choosePharma .container .boxTop div label .img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #0152a8;
+  padding: 2px;
+  margin-right: 10px;
+}
+.choosePharma .container .boxTop div label p {
+  color: #0152a8;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
+  line-height: 142%;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.choosePharma .container .boxBottom {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.choosePharma .container .boxBottom div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choosePharma .container .boxBottom div input {
+  display: none;
+}
+.choosePharma .container .boxBottom div input + label .img img {
+  display: none;
+}
+.choosePharma .container .boxBottom div input:checked + label .img {
+  box-shadow: 0 0 5px 10px rgba(15, 227, 174, 0.431372549);
+  background-color: rgba(15, 227, 174, 0.431372549);
+  border-radius: 10px;
+}
+.choosePharma .container .boxBottom div input:checked + label .img img {
+  display: flex;
+}
+.choosePharma .container .boxBottom div label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choosePharma .container .boxBottom div label .img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #0152a8;
+  padding: 2px;
+  margin-right: 10px;
+}
+.choosePharma .container .boxBottom div label p {
+  color: #0152a8;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
+  line-height: 142%;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
 
 /* -================================== Choose Pharma finish ================================== */
-
 /* Mirjalol aka */
 /* -================================== Medical Experts begin ================================== */
+.medicalExperts {
+  background: #0152a8;
+}
+.medicalExperts .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.medicalExperts .container .part1 {
+  margin-top: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.medicalExperts .container .part1 .txt p {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  line-height: 142%;
+  letter-spacing: 5.81px;
+  display: inline-block;
+  border: 0.1px solid rgba(143, 143, 143, 0.295);
+  padding: 5px 22px;
+}
+.medicalExperts .container .part1 .txt h2 {
+  margin: 13px 0 33px;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+  text-align: center;
+}
+.medicalExperts .container .part1 button {
+  width: 190px;
+  height: 60px;
+  color: #0152a8;
+}
+.medicalExperts .container .part2 {
+  margin-top: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 130px;
+  border-bottom: 1px solid #2f85e1;
+}
+.medicalExperts .container .part2 .prsn {
+  width: 360px;
+  height: 520px;
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  flex-direction: column;
+  background: #004a99;
+  border: 5px solid #0152a8;
+}
+.medicalExperts .container .part2 .prsn:hover {
+  animation-name: hover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.medicalExperts .container .part2 .prsn img {
+  margin-bottom: 20px;
+}
+.medicalExperts .container .part2 .prsn p {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 114.5%;
+}
+.medicalExperts .container .part2 .prsn span {
+  margin: 10px 0 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%;
+}
+.medicalExperts .container .part2 .prsn .network img {
+  cursor: pointer;
+  margin: 0 8px;
+}
+.medicalExperts .container .part2 .prsn .network img:hover {
+  box-shadow: 0 0 5px 10px rgba(15, 227, 174, 0.431372549);
+  background-color: rgba(15, 227, 174, 0.431372549);
+  border-radius: 10px;
+}
+.medicalExperts .container .part3 {
+  margin: 40px 0 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+.medicalExperts .container .part3 .num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.medicalExperts .container .part3 .num h2 {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+}
+.medicalExperts .container .part3 .num p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 173%;
+  letter-spacing: 5.81px;
+  border: 0.1px solid rgba(143, 143, 143, 0.295);
+  padding: 0 9px;
+}
 
 /* -================================== Medical Experts finish ================================== */
-
 /* Sarvara */
 /* -================================== News Updade begin ================================== */
+.newsUpdate .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.newsUpdate .container .part1 {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.newsUpdate .container .part1 .txt p {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  line-height: 142%;
+  letter-spacing: 5.81px;
+  display: inline-block;
+  border: 0.1px solid rgba(143, 143, 143, 0.295);
+  padding: 5px 22px;
+}
+.newsUpdate .container .part1 .txt h2 {
+  margin: 13px 0 33px;
+  color: #000000;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+  text-align: center;
+}
+.newsUpdate .container .part1 button {
+  cursor: pointer;
+  width: 190px;
+  height: 60px;
+  color: #0152a8;
+  background: #ffffff;
+  border: 1px solid #dfdfdf;
+}
+.newsUpdate .container .part1 button:hover {
+  background: #0fe3af;
+  color: white;
+}
+.newsUpdate .container .part1 button:active {
+  background: #095fba;
+  color: white;
+}
+.newsUpdate .container .allnews {
+  margin: 20px 0 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.newsUpdate .container .allnews .w1 {
+  margin-top: 30px;
+  width: 590px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsUpdate .container .allnews .w1 img {
+  margin-right: 30px;
+}
+.newsUpdate .container .allnews .w1 .txt p {
+  color: #1c1c1c;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 142%;
+  letter-spacing: 5.81px;
+  border: 1px solid #cecece;
+  display: inline-block;
+  padding: 0 5px;
+  margin-bottom: 18px;
+}
+.newsUpdate .container .allnews .w1 .txt h4 {
+  color: #1c1c1c;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+}
 
 /* -================================== News Updade finish ================================== */
 /* -================================== Footer begin ================================== */
+footer {
+  height: 560px;
+  background-image: url("../img/Abzarbek/footer.img");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+footer .container .FNav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .FNav .logo {
+  margin-right: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .FNav .logo p {
+  color: #1c1c1c;
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 105%;
+}
+footer .container .FNav .contact {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+footer .container .FNav .contact .w1 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .container .FNav .contact .w1 .img {
+  margin-right: 10px;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #0fe3af;
+}
+footer .container .FNav .contact .w1 p {
+  color: #545454;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 200%;
+}
+footer .container .FNav .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer .container .FNav .social img {
+  cursor: pointer;
+}
+footer .container .FNav .social img:hover {
+  border-radius: 50%;
+  background: #0fe3af;
+  transform: scale(1.1);
+  box-shadow: 0 0 8px #0fe3af;
+}
+footer .container .mainPart {
+  margin-top: 63px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .mainPart .div1 {
+  width: 370px;
+  color: #1c1c1c;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 141%;
+}
+footer .container .mainPart .div2 {
+  width: 91px;
+}
+footer .container .mainPart .div2 p {
+  color: #1c1c1c;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 114.5%;
+  margin-bottom: 14px;
+}
+footer .container .mainPart .div2 span {
+  color: #545454;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 200%;
+}
+footer .container .mainPart .div3 {
+  width: 140px;
+}
+footer .container .mainPart .div3 p {
+  margin-bottom: 14px;
+  color: #1c1c1c;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 114.5%;
+}
+footer .container .mainPart .div3 span {
+  color: #545454;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 200%;
+}
+footer .container .mainPart .div4 {
+  width: 325px;
+}
+footer .container .mainPart .div4 p {
+  margin-bottom: 14px;
+  color: #1c1c1c;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 114.5%;
+}
+footer .container .mainPart .div4 span {
+  color: #545454;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 200%;
+}
+footer .container .mainPart .div4 input {
+  margin: 16px 0;
+  width: 325px;
+  height: 60px;
+  border: none;
+  padding: 18px;
+  outline: none;
+}
+footer .container .mainPart .div4 input:focus {
+  animation-name: hover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+footer .container .mainPart .div4 button {
+  width: 140px;
+  height: 60px;
+}
 
-/* -================================== Footer finish ================================== */
+.div {
+  margin: 20px 0;
+  text-align: center;
+  color: #545454;
+  font-size: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+/* -================================== Footer finish ================================== *//*# sourceMappingURL=main.css.map */
