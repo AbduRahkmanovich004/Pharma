@@ -1,9 +1,9 @@
 @font-face {
-  font-family: Inter;
-  src: url("../font/inter/Inter-VariableFont_slnt\,wght.ttf");
+  font-family: "Inter", sans-serif;
+  src: url("../font/inter/Inter-VariableFont_slnt,wght.ttf");
 }
 @font-face {
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   src: url(../font/Loto/Lato-Black.ttf);
   src: url(../font/Loto/Lato-BlackItalic.ttf);
   src: url(../font/Loto/Lato-Bold.ttf);
@@ -16,59 +16,723 @@
   src: url(../font/Loto/Lato-ThinItalic.ttf);
 }
 @font-face {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   src: url(../font/montserrat/Montserrat-Italic-VariableFont_wght.ttf);
   src: url(../font/montserrat/Montserrat-VariableFont_wght.ttf);
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
-  font-family: Lato;
-  font-style: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
-nav section footer {
+nav {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   width: 1200px;
 }
 
+.btn1 {
+  cursor: pointer;
+  border: none;
+  color: white;
+  background: #0152a8;
+}
+.btn1:hover {
+  background: #143450;
+}
+.btn1:active {
+  background: #0fe3af;
+  color: black;
+}
+
+.btn2 {
+  cursor: pointer;
+  margin-top: 25px;
+  color: black;
+  width: 233px;
+  height: 60px;
+  background-color: #0fe3af;
+  border: none;
+}
+.btn2:hover {
+  background: #143450;
+  color: white;
+}
+.btn2:active {
+  background: #0152a8;
+  color: white;
+}
+
 /* Abzarbek */
 /* -================================== nav begin ================================== */
+.navTop {
+  background: #0152a8;
+}
+.navTop .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+.navTop .container .connact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+.navTop .container .connact .navphone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navTop .container .connact .navphone .phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #095fba;
+  margin-right: 10px;
+  width: 34.624px;
+  height: 34.624px;
+}
+.navTop .container .connact .navphone p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+
+.navMain {
+  height: 176px;
+}
+.navMain .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navMain .container .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navMain .container .logo h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 31px;
+  text-align: left;
+}
+.navMain .container .menyu {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  color: #1c1c1c;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  line-height: 160%;
+}
+.navMain .container .menyu li {
+  cursor: pointer;
+  padding: 70px 0;
+  margin: 0;
+  position: relative;
+}
+.navMain .container .menyu li a {
+  text-decoration: none;
+}
+.navMain .container .menyu li:hover {
+  color: #0152a8;
+  border-bottom: 3px solid #0152a8;
+}
+.navMain .container .menyu li img:hover + .deleties {
+  display: flex;
+}
+.navMain .container .menyu li .deleties {
+  border-radius: 5px;
+  position: absolute;
+  display: flex;
+  background: #0152a8;
+  flex-direction: column;
+  color: white;
+  right: 0;
+  display: none;
+}
+.navMain .container button {
+  text-align: right;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 160%;
+  border: none;
+  width: 188px;
+  height: 61px;
+  padding: 16px 37px 16px 37px;
+  gap: 10px;
+}
 
 /* -================================== nav finish ================================== */
 /* -================================== Home begin ================================== */
+.Home {
+  background-image: url("../img/Abzarbek/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.Home .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Home .container .hometxt {
+  width: 40%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+.Home .container .hometxt p {
+  background: #0fe3af;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.415em;
+  text-align: left;
+}
+.Home .container .hometxt h1 {
+  margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 57px;
+  text-align: left;
+}
+.Home .container .hometxt sapn {
+  margin-top: 23px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  display: inline-block;
+  width: 410px;
+  height: 91px;
+}
+.Home .container .hometxt button {
+  margin-top: 30px;
+  width: Hug 171px;
+  height: Hug 60px;
+  padding: 17px 41px 17px 41px;
+  gap: 10px;
+}
+.Home .container .imagediv {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* -================================== Home finish ================================== */
 /* -================================== Services begin ================================== */
+@keyframes hover {
+  0% {
+    box-shadow: 0 0 10px #0fe3af;
+  }
+  10% {
+    box-shadow: 0 0 2px #0fe3af;
+  }
+  20% {
+    box-shadow: 0 0 10px #0fe3af;
+  }
+  30% {
+    box-shadow: 0 0 2px #0fe3af;
+  }
+  40% {
+    box-shadow: 0 0 10px #0fe3af;
+  }
+  50% {
+    box-shadow: 0 0 2px #0fe3af;
+  }
+  60% {
+    box-shadow: 0 0 10px #0fe3af;
+  }
+  70% {
+    box-shadow: 0 0 2px #0fe3af;
+  }
+  80% {
+    box-shadow: 0 0 10px #0fe3af;
+  }
+  90% {
+    box-shadow: 0 0 2px #0fe3af;
+  }
+  100% {
+    box-shadow: 0 0 10px #0fe3af;
+  }
+}
+.Services {
+  display: flex;
+  flex-direction: column;
+}
+.Services .container {
+  margin: 150px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Services .container p {
+  border: 1px solid rgb(139, 139, 139);
+  padding: 5px 15px;
+  color: #1c1c1c;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  line-height: 142%;
+  letter-spacing: 5.81px;
+}
+.Services .container h2 {
+  margin-top: 15px;
+  width: 406px;
+  height: 78px;
+  color: #1c1c1c;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+}
+.Services .container .catolog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Services .container .catolog .w1 {
+  width: 285px;
+  height: 305px;
+  background: #f1f1f1;
+  margin-top: 20px;
+  padding: 45px 30px 45px 30px;
+}
+.Services .container .catolog .w1:hover {
+  transform: scale(1.03);
+  animation-name: hover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.Services .container .catolog .w1:hover .pdiv .img {
+  background: #0fe3af;
+}
+.Services .container .catolog .w1 h4 {
+  color: #1c1c1c;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 115%;
+}
+.Services .container .catolog .w1 span {
+  margin-top: 10px;
+  color: #545454;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 142%;
+}
+.Services .container .catolog .w1 .pdiv {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.Services .container .catolog .w1 .pdiv p {
+  padding: 0;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.Services .container .catolog .w1 .pdiv .img {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #c9c9c9;
+  margin-left: 8px;
+  width: 17px;
+  height: 17px;
+}
+.Services .container .catolog .w1:nth-child(4), .Services .container .catolog .w1:nth-child(6) {
+  padding: 0;
+}
+.Services .container .catolog .w1:nth-child(4) img, .Services .container .catolog .w1:nth-child(6) img {
+  width: 100%;
+  height: 100%;
+}
 
 /* -================================== Services finish ================================== */
 /* -================================== About us begin ================================== */
+.aboutUs {
+  height: 710px;
+  background-image: url("../img/Abzarbek/Photo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.aboutUs .container {
+  display: flex;
+  transform: translateX(325px);
+  background: white;
+  width: 547px;
+  height: 476px;
+}
+.aboutUs .container .card {
+  padding: 52px 44px;
+}
+.aboutUs .container .card:hover {
+  transform: scale(1.03);
+  animation-name: hover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.aboutUs .container .card p {
+  width: 140px;
+  height: 26px;
+  padding: 8px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(110, 110, 110, 0.247);
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.415em;
+  text-align: left;
+}
+.aboutUs .container .card h4 {
+  margin: 14px 0 15px;
+  color: #1c1c1c;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+}
+.aboutUs .container .card span {
+  color: #545454;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 142%;
+}
+.aboutUs .container .card .timeDiv {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.aboutUs .container .card .timeDiv .w2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutUs .container .card .timeDiv .w2 .img {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #0fe3af;
+}
+.aboutUs .container .card .timeDiv .w2 p {
+  border: none;
+  color: #1c1c1c;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  line-height: 142%;
+  letter-spacing: normal;
+}
+.aboutUs .container .card button {
+  width: 197px;
+  height: 60px;
+}
 
 /* -================================== About us finish ================================== */
 /* -================================== Logos begin ================================== */
+.logos .container {
+  padding: 80px 0;
+}
+.logos .container marquee img {
+  margin: 0 90px;
+}
 
 /* -================================== Logos finish ================================== */
-
 /* Quvonch */
 /* -================================== Schedule begin ================================== */
+.Schedule .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 412px;
+  background-image: url("../img/Abzarbek/bg.png");
+}
+.Schedule .container h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+}
 
 /* -================================== Schedule finish ================================== */
-
 /* nilufar opa */
 /* -================================== Special Core begin ================================== */
+.specialCore .container {
+  margin-top: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 140px;
+  border-bottom: 1px solid #dbdbdb;
+}
+.specialCore .container .fortxt {
+  width: 500px;
+}
+.specialCore .container .fortxt p {
+  color: #1c1c1c;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  line-height: 142%;
+  letter-spacing: 5.81px;
+  border: 0.1px solid rgba(143, 143, 143, 0.295);
+  display: inline-block;
+  padding: 5px 22px;
+}
+.specialCore .container .fortxt h2 {
+  margin: 13px 0 33px;
+  color: #1c1c1c;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+}
+.specialCore .container .fortxt span {
+  color: #545454;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 142%;
+}
+.specialCore .container .fortxt span b {
+  color: #0152a8;
+}
+.specialCore .container .fortxt .cheak {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.specialCore .container .fortxt .cheak p {
+  border: none;
+  color: #1c1c1c;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0;
+  line-height: 142%;
+  padding: 0 10px;
+}
+.specialCore .container .fortxt button {
+  margin-top: 30px;
+  width: 190px;
+  height: 60px;
+}
+.specialCore .container .forImg {
+  width: 500px;
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+.specialCore .container .forImg .divtxtImg {
+  display: flex;
+  flex-direction: column;
+  padding: 13px 23px;
+  bottom: 70px;
+  left: 190px;
+  width: 200px;
+  height: 75px;
+  position: absolute;
+  background: #1c1c1c;
+}
+.specialCore .container .forImg .divtxtImg span {
+  color: #9a9a9a;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 142%;
+}
+.specialCore .container .forImg .divtxtImg p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+}
 
 /* -================================== Special Core finish ================================== */
 /* -================================== Feedback begin ================================== */
+.Feedback .container {
+  margin-bottom: 215px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Feedback .container p {
+  color: #1c1c1c;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  line-height: 142%;
+  letter-spacing: 5.81px;
+  border: 0.1px solid rgba(143, 143, 143, 0.295);
+  display: inline-block;
+  padding: 5px 22px;
+}
+.Feedback .container h2 {
+  margin: 13px 0 33px;
+  color: #1c1c1c;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+  text-align: center;
+}
+.Feedback .container .divFour {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Feedback .container .divFour .w1 {
+  margin-top: 30px;
+  background: #f1f1f1;
+  width: 585px;
+  padding: 46px;
+}
+.Feedback .container .divFour .w1:hover {
+  animation-name: hover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.Feedback .container .divFour .w1 span {
+  color: #545454;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 142%;
+}
+.Feedback .container .divFour .w1 .stars {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  transform: rotateY(180deg);
+}
+.Feedback .container .divFour .w1 .stars i {
+  cursor: pointer;
+  color: rgba(59, 59, 59, 0.4549019608);
+}
+.Feedback .container .divFour .w1 .stars i:nth-child(1):hover {
+  color: #fbb837;
+}
+.Feedback .container .divFour .w1 .stars i:nth-child(1):hover + i:nth-child(2), .Feedback .container .divFour .w1 .stars i:nth-child(1):hover + i:nth-child(2) + i:nth-child(3), .Feedback .container .divFour .w1 .stars i:nth-child(1):hover + i:nth-child(2) + i:nth-child(3) + i:nth-child(4), .Feedback .container .divFour .w1 .stars i:nth-child(1):hover + i:nth-child(2) + i:nth-child(3) + i:nth-child(4) + i:nth-child(5) {
+  color: #fbb837;
+}
+.Feedback .container .divFour .w1 .stars i:nth-child(2):hover {
+  color: #fbb837;
+}
+.Feedback .container .divFour .w1 .stars i:nth-child(2):hover + :nth-child(3), .Feedback .container .divFour .w1 .stars i:nth-child(2):hover + i:nth-child(3) + i:nth-child(4), .Feedback .container .divFour .w1 .stars i:nth-child(2):hover + i:nth-child(3) + i:nth-child(4) + i:nth-child(5) {
+  color: #fbb837;
+}
+.Feedback .container .divFour .w1 .stars i:nth-child(3):hover {
+  color: #fbb837;
+}
+.Feedback .container .divFour .w1 .stars i:nth-child(3):hover + i:nth-child(4), .Feedback .container .divFour .w1 .stars i:nth-child(3):hover + i:nth-child(4) + i:nth-child(5) {
+  color: #fbb837;
+}
+.Feedback .container .divFour .w1 .stars i:nth-child(4):hover {
+  color: #fbb837;
+}
+.Feedback .container .divFour .w1 .stars i:nth-child(4):hover + i:nth-child(5) {
+  color: #fbb837;
+}
+.Feedback .container .divFour .w1 .stars i:nth-child(5):hover {
+  color: #fbb837;
+}
+.Feedback .container .divFour .w1 .divProfi {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Feedback .container .divFour .w1 .divProfi img:nth-child(1) {
+  border-radius: 50%;
+}
+.Feedback .container .divFour .w1 .divProfi .Fio {
+  transform: translateX(-100px);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.Feedback .container .divFour .w1 .divProfi .Fio p {
+  color: #1c1c1c;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  border: none;
+  letter-spacing: 0;
+  font-weight: 600;
+  line-height: 114.5%;
+}
+.Feedback .container .divFour .w1 .divProfi .Fio span {
+  color: #545454;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 142%;
+}
 
 /* -================================== Feedback finish ================================== */
-
 /* Dilshoda */
 /* -================================== Choose Pharma begin ================================== */
 
