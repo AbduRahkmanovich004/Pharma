@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Inter;
+  src: url("../font/inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+  font-family: Lato;
+  src: url(../font/Loto/Lato-Black.ttf);
+  src: url(../font/Loto/Lato-BlackItalic.ttf);
+  src: url(../font/Loto/Lato-Bold.ttf);
+  src: url(../font/Loto/Lato-BoldItalic.ttf);
+  src: url(../font/Loto/Lato-Italic.ttf);
+  src: url(../font/Loto/Lato-Light.ttf);
+  src: url(../font/Loto/Lato-LightItalic.ttf);
+  src: url(../font/Loto/Lato-Regular.ttf);
+  src: url(../font/Loto/Lato-Thin.ttf);
+  src: url(../font/Loto/Lato-ThinItalic.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+  src: url(../font/montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: Lato;
+  font-style: normal;
+}
+
+nav section footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 1200px;
+}
+
+/* Abzarbek */
+/* -================================== nav begin ================================== */
+
+/* -================================== nav finish ================================== */
+/* -================================== Home begin ================================== */
+
+/* -================================== Home finish ================================== */
+/* -================================== Services begin ================================== */
+
+/* -================================== Services finish ================================== */
+/* -================================== About us begin ================================== */
+
+/* -================================== About us finish ================================== */
+/* -================================== Logos begin ================================== */
+
+/* -================================== Logos finish ================================== */
+
+/* Quvonch */
+/* -================================== Schedule begin ================================== */
+
+/* -================================== Schedule finish ================================== */
+
+/* nilufar opa */
+/* -================================== Special Core begin ================================== */
+
+/* -================================== Special Core finish ================================== */
+/* -================================== Feedback begin ================================== */
+
+/* -================================== Feedback finish ================================== */
+
+/* Dilshoda */
+/* -================================== Choose Pharma begin ================================== */
+
+/* -================================== Choose Pharma finish ================================== */
+
+/* Mirjalol aka */
+/* -================================== Medical Experts begin ================================== */
+
+/* -================================== Medical Experts finish ================================== */
+
+/* Sarvara */
+/* -================================== News Updade begin ================================== */
+
+/* -================================== News Updade finish ================================== */
+/* -================================== Footer begin ================================== */
+
+/* -================================== Footer finish ================================== */
